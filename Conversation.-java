@@ -8,22 +8,27 @@ class Conversation {
   public static void main(String[] arguments) {
     // You will start the conversation here.
     
-   
+    System.out.println("Hey! Hows it going?");
     // asks user how many rounds to play
-    System.out.println("how many rounds");
     Scanner input= new Scanner (System.in);
-    double rounds= input.nextDouble();
+    System.out.println("how many rounds");
+    
+    int rounds= input.nextint();
     Scanner input1;
     String response;
     Random r= new Random();
 
   // list of statements and resposnes for transcript
     
-  ArrayList<String> transcript = new ArrayList<String>();
-  
-// print greeting,  
+  String [] transcript = new String[rounds*2+2];
+  input.nextline();
+  transcript[0]= "ask a question";
+  System.out.print(transcript[0]);
 
-    System.out.println("Hey! Hows it going?");
+  
+  
+
+    
 
   //list of random responses for else statement
     ArrayList<String> rand_response = new ArrayList<String>();
@@ -46,9 +51,19 @@ class Conversation {
     /*For loop depending on amount of rounds entered by user
      * 
      */
-    for (int i=0; i<= rounds; i++ ){
+    for (int round=0; round < rounds; round++ ){
       String statement = input.next(); 
       transcript.add(statement);
+      transcript[2*round+1]=input.nextline();
+      transcript[2*round+2]= "aha";
+      System.out[transcript[2*round+2]];
+    }
+    System.out[transcript];
+
+    for (String line: transcript){
+      System.out.print(line);
+    }
+
       
       //need to split the sentence
       String str[] = statement.split(" ");
@@ -80,20 +95,18 @@ class Conversation {
         else if(word.equals("your")){
             // trying to replace i with updated word
           word= ("my");}
-      transcript.add(word);
+    transcript.add(word);
       
-      if (statement.equals(str)) {  
+      //if (statement.equals(str)) {  
       
-        transcript.add(index);
-      
-       
-       
+        //transcript.add(index);
+             
         
-
-System.out.println(transcript);
+//System.out.println(transcript);
    
-    }}}
-System.out.println("Goodbye!");}}}
+    }}
+System.out.println(transcript);
+System.out.println("Goodbye!");}}
 
     
   
