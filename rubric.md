@@ -22,7 +22,7 @@ __yes___ 1 pt: Allocates static array of canned responses
 
 ### Level 2 (3 pts)
 
-__no___ 1 pt: Uses a canned response when no mirror words detected
+__yes___ 1 pt: Uses a canned response when no mirror words detected
 
 __yes___ 1 pt: Detects the requested set of mirror words (at minimum)
 
@@ -34,7 +34,7 @@ __yes___ 1 pt: Makes all appropriate mirror replacements
 
 _yes____ 1 pt: Stores transcript of the conversation in an array
 
-__yes(ish)___ 1 pt: Prints transcript when terminating
+__yes___ 1 pt: Prints transcript when terminating
 
 ## Kudos:
 
@@ -48,9 +48,9 @@ __no___ (Kudos!) Handles you --> me/I dilemma
 
 ## General Items:
 
-_no____ 4 pts: Programs compile without errors or warnings
+_yes____ 4 pts: Programs compile without errors or warnings
 
-__no___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
+__yes___ 2 pts: Executes fully & consistently without crashing (exception/freeze)
 
 _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
@@ -62,7 +62,7 @@ _____ 2 pt: Complies with style guidelines (missing items 1 pt each):
 
       __yes___ Methods & variables all have clear and accurate names
 
-      __yes?___ Methods avoid confusing side effects
+      __yes__ Methods avoid confusing side effects
 
 __yes___ 1 pt: All required files included with submission (including completed checklist file)
 
